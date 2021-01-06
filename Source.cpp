@@ -3,21 +3,48 @@ using namespace std;
 
 int main() {
 
-	long long int num, g, sum = 0, p = 1;
-	int i = 1, a;
-	cout << "Please, enter value: ";
-	cin >> num;
+	int a, i, sum = 0, c;
 
-	g = num * num;
+	cout << "Please, enter value: " << endl;
+	cin >> a;
+
+	int g = a;
 	
-	while (p * 10 <= num) {
-		p *= 10;
+	for (i = 0; a > 0; i++) {
+
+			sum = sum + a % 10;
+			a = a / 10;
+	
 	}
+			c = (sum * sum * sum);
+			a = a / 10;
+			if (c == g * g) cout << "\nThe condition is met!" << endl;
+			else cout << "\nThe condition is not met" << endl;
 	
-	while (p) {
+	
+		return 0;
 
-		a = num / p;
-		sum = sum + a;
+				c = (sum * sum * sum);
+			a = a / 10;
+
+			}
+
+
+
+}
+
+	
+
+	
+		
+	cout << c << " " <<  b;
+		
+
+		
+	
+	return 0;
+
+				c = (sum * sum * sum);
 
 		num = num % p;
 		p = p / 10;
